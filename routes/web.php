@@ -1,0 +1,20 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+# Admin Routes
+# Admin Auth
+Route::get('/admin-auth', '\App\Http\Controllers\AdminController@getAdminAuth')->name('getAdminAuth');
+Route::post('/admin-auth', '\App\Http\Controllers\AdminController@postAdminAuth')->name('postAdminAuth');
+Route::middleware(['adminAuth'])->group(function () {
+    # Admin Dashboard
+    Route::get('/dashboard', '\App\Http\Controllers\AdminController@getDashboard')->name('getDashboard');
+    Route::get('/list-of-orders', '\App\Http\Controllers\AdminController@getListOfOrders')->name('getListOfOrders');
+    Route::get('/logout', '\App\Http\Controllers\AdminController@logout')->name('logout');
+});
+
+# User Routes
+Route::get('/', function () {
+    return view('home');
+});
+Route::post('/store', '\App\Http\Controllers\OrderController@store')->name('store');

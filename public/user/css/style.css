@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cairo;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    background: transparent;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    background: #F0EEBDFF;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+
+.title-h1 {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.price {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.price span {
+    font-size: 4rem;
+    color: #26292E;
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0px;
+    text-shadow: 0px 0px 0px #000000;
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: larger;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box input {
+    height: 50px;
+    width: 95%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.user-input-box input::placeholder {
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgb(172, 170, 170);
+}
+
+.free-delivery {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.form-submit-btn {
+    margin-top: 10px;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(209, 209, 209);
+    background: red;
+    cursor: pointer;
+}
+
+.form-submit-btn input:hover {
+    background: rgb(82, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.img-fluid {
+    width: 100%;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.img-7 {
+    margin-top: 40px;
+}
+
+.delivery {
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(255, 224, 228);
+    border-top: solid 5px rgb(248, 179, 190);
+}
+
+.request-btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    background-color: rgb(233, 16, 16);
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 70%;
+    height: 45px;
+}
+
+button:hover {
+
+    background-color: #6a1c1c;
+    color: white;
+}
+
+.div-green {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(40, 180, 40);
+}
+
+.circle {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+    color: black;
+    font-size: 24px;
+    line-height: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.circle p {
+    margin: 10px;
+}
+
+.request-btn-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.request-btn-2 button {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 70%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+#countdown {
+    text-align: center;
+    padding: 30px;
+}
+
+/* message de succès */
+.alert {
+    width: 40%;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    background-color: #36675F;
+    color: white;
+}
+
+.alert .text {
+    padding-right: 30px;
+}
+
+.closebtn {
+    padding-top: 2px;
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: red;
+}
+
+@media(max-width: 800px) {
+    .main {
+        min-width: 100px;
+        overflow-x: hidden;
+    }
+
+    .title-h1 {
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .user-input-box {
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .form-submit-btn {
+        margin-top: 10px;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .img-7 {
+        margin-top: 10px;
+    }
+
+    .request-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-rqt {
+        display: flex;
+        background-color: rgb(99, 27, 27);
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        height: 45px;
+    }
+}
