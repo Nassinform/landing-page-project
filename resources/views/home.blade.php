@@ -161,6 +161,21 @@
         // Start the countdown with 1 hour for testing
         startCountdown(1);
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("orderButton1").addEventListener("click", function() {
+                document.querySelector('.container').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+
+            document.getElementById("orderButton2").addEventListener("click", function() {
+                document.querySelector('.container').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
