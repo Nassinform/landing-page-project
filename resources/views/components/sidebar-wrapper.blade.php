@@ -15,6 +15,12 @@
                     <span class="menu-text">Liste des commandes</span>
                 </a>
             </li>
+            <li class="{{ request()->is('advertisings') ? 'active current-page' : '' }}">
+                <a href="{{ route('getAdvertisings') }}">
+                    <i class="icon-list"></i>
+                    <span class="menu-text">Publicités</span>
+                </a>
+            </li>
         </ul>
     </div>
     <!-- Sidebar menu ends -->

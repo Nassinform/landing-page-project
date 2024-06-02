@@ -10,8 +10,11 @@ Route::middleware(['adminAuth'])->group(function () {
     # Admin Dashboard
     Route::get('/dashboard', '\App\Http\Controllers\AdminController@getDashboard')->name('getDashboard');
     Route::get('/list-of-orders', '\App\Http\Controllers\AdminController@getListOfOrders')->name('getListOfOrders');
+    Route::get('/advertisings', '\App\Http\Controllers\AdvertisingController@getAdvertisings')->name('getAdvertisings');
+    Route::post('/advertisings', '\App\Http\Controllers\AdvertisingController@postAdvertisings')->name('postAdvertisings');
     Route::get('/logout', '\App\Http\Controllers\AdminController@logout')->name('logout');
 });
+
 
 # User Routes
 Route::get('/', function () {
