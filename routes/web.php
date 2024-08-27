@@ -21,3 +21,6 @@ Route::get('/', function () {
     return view('home');
 });
 Route::post('/store', '\App\Http\Controllers\OrderController@store')->name('store');
+
+Route::get('/sheet', '\App\Http\Controllers\GoogleSheetController@index')->name('index');
+Route::get('/sheet2', '\App\Http\Controllers\GoogleSheetController@index2')->name('index2');
