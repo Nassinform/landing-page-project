@@ -22,5 +22,5 @@ Route::get('/', function () {
 });
 Route::post('/store', '\App\Http\Controllers\OrderController@store')->name('store');
 
-Route::get('/sheet', '\App\Http\Controllers\GoogleSheetController@index')->name('index');
+Route::get('/sheet1', '\App\Http\Controllers\GoogleSheetController@index1')->name('index1');
 Route::get('/sheet2', '\App\Http\Controllers\GoogleSheetController@index2')->name('index2');
