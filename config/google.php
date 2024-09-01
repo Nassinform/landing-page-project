@@ -54,7 +54,7 @@ return [
          * Path to service account json file. You can also pass the credentials as an array
          * instead of a file path.
          */
-        'file' => storage_path('houloul-herbalance-d92698933b55.json'),
+        'file' => storage_path('houloul-herbalance-b2cc8a2ee6ae.json'),
     ],
 
     /*
