@@ -1,73 +1,33 @@
 <?php
 
 return [
-    /*
-    |----------------------------------------------------------------------------
-    | Google application name
-    |----------------------------------------------------------------------------
-    */
-    'application_name' => env('GOOGLE_APPLICATION_NAME', ''),
-
-    /*
-    |----------------------------------------------------------------------------
-    | Google OAuth 2.0 access
-    |----------------------------------------------------------------------------
-    |
-    | Keys for OAuth 2.0 access, see the API console at
-    | https://developers.google.com/console
-    |
-    */
-    'client_id' => env('GOOGLE_CLIENT_ID', ''),
-    'client_secret' => env('GOOGLE_CLIENT_SECRET', ''),
-    'redirect_uri' => env('GOOGLE_REDIRECT', ''),
-    'scopes' => [\Google\Service\Sheets::DRIVE, \Google\Service\Sheets::SPREADSHEETS],
-    'access_type' => 'online',
-    'approval_prompt' => 'auto',
-
-    /*
-    |----------------------------------------------------------------------------
-    | Google developer key
-    |----------------------------------------------------------------------------
-    |
-    | Simple API access key, also from the API console. Ensure you get
-    | a Server key, and not a Browser key.
-    |
-    */
-    'developer_key' => env('GOOGLE_DEVELOPER_KEY', ''),
-
-    /*
-    |----------------------------------------------------------------------------
-    | Google service account
-    |----------------------------------------------------------------------------
-    |
-    | Set the credentials JSON's location to use assert credentials, otherwise
-    | app engine or compute engine will be used.
-    |
-    */
-    'service' => [
-        /*
-        | Enable service account auth or not.
-        */
-        'enable' => env('GOOGLE_SERVICE_ENABLED', false),
-
-        /*
-         * Path to service account json file. You can also pass the credentials as an array
-         * instead of a file path.
-         */
-        'file' => storage_path('houloul-herbalance-b2cc8a2ee6ae.json'),
+    'project_1' => [
+        'application_name' => env('GOOGLE_SHEETS_1_APPLICATION_NAME', ''),
+        'client_id' => env('GOOGLE_SHEETS_1_CLIENT_ID', ''),
+        'client_secret' => env('GOOGLE_SHEETS_1_CLIENT_SECRET', ''),
+        'redirect_uri' => env('GOOGLE_SHEETS_1_REDIRECT', ''),
+        'scopes' => [\Google\Service\Sheets::DRIVE, \Google\Service\Sheets::SPREADSHEETS],
+        'access_type' => 'online',
+        'approval_prompt' => 'auto',
+        'developer_key' => env('GOOGLE_SHEETS_1_DEVELOPER_KEY', ''),
+        'service' => [
+            'enable' => env('GOOGLE_SERVICE_1_ENABLED', false),
+            'file' => storage_path('houloul-herbalance-b2cc8a2ee6ae.json'),
+        ],
     ],
 
-    /*
-    |----------------------------------------------------------------------------
-    | Additional config for the Google Client
-    |----------------------------------------------------------------------------
-    |
-    | Set any additional config variables supported by the Google Client
-    | Details can be found here:
-    | https://github.com/google/google-api-php-client/blob/master/src/Google/Client.php
-    |
-    | NOTE: If client id is specified here, it will get over written by the one above.
-    |
-    */
-    'config' => [],
+    'project_2' => [
+        'application_name' => env('GOOGLE_SHEETS_2_APPLICATION_NAME', ''),
+        'client_id' => env('GOOGLE_SHEETS_2_CLIENT_ID', ''),
+        'client_secret' => env('GOOGLE_SHEETS_2_CLIENT_SECRET', ''),
+        'redirect_uri' => env('GOOGLE_SHEETS_2_REDIRECT', ''),
+        'scopes' => [\Google\Service\Sheets::DRIVE, \Google\Service\Sheets::SPREADSHEETS],
+        'access_type' => 'online',
+        'approval_prompt' => 'auto',
+        'developer_key' => env('GOOGLE_SHEETS_2_DEVELOPER_KEY', ''),
+        'service' => [
+            'enable' => env('GOOGLE_SERVICE_2_ENABLED', false),
+            'file' => storage_path('houloul-herbalance-bio-4c521341e537.json'),
+        ],
+    ],
 ];
